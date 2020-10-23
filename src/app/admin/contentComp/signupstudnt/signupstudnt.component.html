@@ -1,0 +1,25 @@
+
+
+  <form action="index.html" method="post">
+  
+    <h1>Add new Student</h1>
+    
+    <fieldset>
+    
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="name" >
+      
+      <label for="mail">Adress:</label>
+      <input type="text" id="mail" name="address" [(ngModel)]="address">
+
+      
+      <label for="password">Phone number:</label>
+      <input type="text" id="password" name="phoneNumber" [(ngModel)]="phoneNumber">
+      
+
+      
+    </fieldset>
+   
+    <button (click)="signup()" type="submit">Sign Up</button>
+  </form>
+  

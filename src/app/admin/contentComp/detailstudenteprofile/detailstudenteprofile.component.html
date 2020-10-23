@@ -1,0 +1,216 @@
+<div class="row">
+    <class class="container-fluid">
+      <div class="side-body">
+        
+
+
+        <div class="rela-block container">
+            <div class="rela-block profile-card">
+                <div class="profile-pic" id="profile_pic"></div>
+                <!-- profile pic ,grade, email and card num (data of student) -->
+                <div class="rela-block profile-name-container" >
+                    <div class="rela-block user-name" id="user_name" >{{name}}</div>
+                    <div class="rela-block user-desc" id="user_description">{{address}}</div>
+                    <div class="rela-block user-desc" id="user_description">{{phoneNumber}}</div>
+                    
+                </div>
+                <!-- two buttons of delete and edit -->
+                <div class="rela-block profile-card-stats">
+                  <div class="floated profile-stat works" id="num_works">
+                    <button type="button" (click)="dele(id)" style="width: 90%; margin-bottom: 10%;"
+                    class="btn btn-danger">Delete this student</button></div>
+
+
+                  <div class="floated profile-stat followers" id="num_followers">
+                    <button type="button"  (click)="edit()" style="width: 90%; margin-bottom: 10%;"
+                    class="btn btn-danger">Edite this student</button></div>
+
+
+                 <!-- toggle of block this user or make it active -->
+                      <div class="button-cover">
+                        <div class="button r" id="button-3">
+                          <input type="checkbox" class="checkbox">
+                          <div class="knobs"></div>
+                          <div class="layer"></div>
+                        </div>
+                      </div>
+                    
+
+
+              </div>
+
+
+                <div class="wrappers">
+              <!-- table of degrees of student in his subjects -->
+                  <div class="table">
+                    
+                    <div id="head" class="rows headers">
+                      <div class="cell">
+                        Name
+                      </div>
+                      <div class="cell">
+                        Age
+                      </div>
+                      <div class="cell">
+                        Occupation
+                      </div>
+                      <div class="cell">
+                        Location
+                      </div>
+                    </div>
+                    
+                    <div class="rows">
+                      <div class="cell" data-title="Name">
+                        Luke Peters
+                      </div>
+                      <div class="cell" data-title="Age">
+                        25
+                      </div>
+                      <div class="cell" data-title="Occupation">
+                        Freelance Web Developer
+                      </div>
+                      <div class="cell" data-title="Location">
+                        Brookline, MA
+                      </div>
+                    </div>
+                    
+                    <div class="rows">
+                      <div class="cell" data-title="Name">
+                        Joseph Smith
+                      </div>
+                      <div class="cell" data-title="Age">
+                        27
+                      </div>
+                      <div class="cell" data-title="Occupation">
+                        Project Manager
+                      </div>
+                      <div class="cell" data-title="Location">
+                        Somerville, MA
+                      </div>
+                    </div>
+                    
+                    <div class="rows">
+                      <div class="cell" data-title="Name">
+                        Maxwell Johnson
+                      </div>
+                      <div class="cell" data-title="Age">
+                        26
+                      </div>
+                      <div class="cell" data-title="Occupation">
+                        UX Architect & Designer
+                      </div>
+                      <div class="cell" data-title="Location">
+                        Arlington, MA
+                      </div>
+                    </div>
+                    
+                    <div class="rows">
+                      <div class="cell" data-title="Name">
+                        Harry Harrison
+                      </div>
+                      <div class="cell" data-title="Age">
+                        25
+                      </div>
+                      <div class="cell" data-title="Occupation">
+                        Front-End Developer
+                      </div>
+                      <div class="cell" data-title="Location">
+                        Boston, MA
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                
+                  
+                </div>
+                </div>
+
+
+
+                <!-- block of all subject he accessed it -->
+                        <div class="rela-block content">
+                          <!-- first subject -->
+                            <div style="display: inline-block;" class="col-sm-3">
+                                <div class="product-card">
+            
+                                  <div class="product-tumb">
+                                      <img src="..\assets\img\science.png" alt="">
+                                  </div>
+                                  <div class="product-details">
+                    
+                                      <h3>Counting</h3>
+                                      <p>Dina Ali </p>
+                                     
+                    
+                                  </div>
+                              </div>
+                              <div class="danger"> <button type="button" style="width: 100%; margin-bottom: 14%;"
+                                class="btn btn-danger">View</button></div>
+                              </div>
+                              <!-- second subject -->
+                              <div style="display: inline-block;" class="col-sm-3">
+                                <div class="product-card">
+            
+                                  <div class="product-tumb">
+                                      <img src="..\assets\img\science.png" alt="">
+                                  </div>
+                                  <div class="product-details">
+                    
+                                      <h3>Counting</h3>
+                                      <p>Dina Ali</p>
+                                    
+                    
+                                  </div>
+                              </div>
+                              <div class="danger"> <button type="button" style="width: 100%; margin-bottom: 14%;"
+                                class="btn btn-danger">View</button></div>
+                              </div>
+                              <!-- third subject -->
+                              <div style="display: inline-block;" class="col-sm-3">
+                                <div class="product-card">
+            
+                                  <div class="product-tumb">
+                                      <img src="..\assets\img\science.png" alt="">
+                                  </div>
+                                  <div class="product-details">
+                    
+                                      <h3>Counting</h3>
+                                      <p>Dina Ali </p>
+                                     
+                    
+                                  </div>
+                              </div>
+                              <div class="danger"> <button type="button" style="width: 100%; margin-bottom: 14%;"
+                                class="btn btn-danger">View</button></div>
+                              </div>
+                              <!-- forth subject -->
+                              <div style="display: inline-block;" class="col-sm-3">
+                                <div class="product-card">
+            
+                                  <div class="product-tumb">
+                                      <img src="..\assets\img\science.png" alt="">
+                                  </div>
+                                  <div class="product-details">
+                    
+                                      <h3>Counting</h3>
+                                      <p>Dina Ali </p>
+                                      
+                    
+                                  </div>
+                              </div>
+                              <div class="danger"> <button type="button" style="width: 100%; margin-bottom: 14%;"
+                                class="btn btn-danger">View</button></div>
+                              </div>
+                          
+                            
+                            </div>
+                            </div>
+
+  
+       
+  
+      </div>
+  
+    </class>
+  </div>

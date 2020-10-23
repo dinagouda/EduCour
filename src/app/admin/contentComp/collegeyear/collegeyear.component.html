@@ -1,0 +1,17 @@
+
+
+  <form ngForm="form" >
+  
+    <h2 style="text-align: center; align-items: center;">Add new College</h2>
+    <fieldset>
+
+      <label for="name">Name:</label>
+      <input type="text" name="name"   class="form-control"  placeholder={{name}} [(ngModel)]="name">
+     
+      
+      
+    </fieldset>
+   
+    <button (click)="edit()" type="submit">Add Academic</button>
+  </form>
+  

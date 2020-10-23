@@ -1,0 +1,47 @@
+<!-- Students component HTML -->
+
+
+
+<div class="row">
+    <class class="container-fluid">
+      <div class="side-body">
+        <!-- button to add a new student -->
+        <button type="button" (click)="signup()" class="btn btn-primary">Add New Student</button>
+  
+        <!-- rows of displaying students cards  -->
+  
+        <!-- row which contain 4 cards with 4 buttons -->
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <div class="row">
+              <!-- loop for display students card from api -->
+              <div *ngFor="let item of service.items" class="col-sm-3">
+                <!-- details of the student -->
+                <div class="product-card">
+  
+                  <div class="product-tumb">
+                    <img src="..\assets\img\avatar.png" alt="">
+                  </div>
+                  <div class="product-details">
+                    <h3>{{item.name}}</h3>
+                    <p id="address">{{item.address}}</p>
+                    <p id="phone">{{item.phoneNumber}}</p>
+                  </div>
+                </div>
+                <!-- button to show the student's details -->
+  
+                <div class="danger">
+                
+                    <button type="button" data-name="{{item.name}}" data-id="{{item.id}}" (click)="senddata($event)"
+                      style="width: 100%; margin-bottom: 14%;" class="btn btn-danger">View</button>
+                
+                </div>
+  
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </class>
+  </div>

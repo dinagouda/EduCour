@@ -1,0 +1,28 @@
+
+
+  <form ngForm="form" >
+  
+    <h1>Edit Student's data</h1>
+    <fieldset>
+      <!-- <input type="text" name="id"  hidden class="form-control"  placeholder={{id}} [(ngModel)]="id"> -->
+      <label for="name">Name:</label>
+      <input type="text" name="name"   class="form-control"  placeholder={{name}} [(ngModel)]="name">
+     
+      
+      <label for="mail">Adress:</label>
+      <input type="text" name="address" class="form-control" placeholder={{address}} [(ngModel)]="address" >
+
+      
+      <label for="password">Phone number:</label>
+      <input type="text" name="phoneNumber" class="form-control" placeholder={{phoneNumber}} [(ngModel)]="phoneNumber" >
+      
+      <label for="password">imgPath:</label>
+      <input type="text" name="imgPath" class="form-control" placeholder={{imgPath}} [(ngModel)]="imgPath" >
+      
+
+      
+    </fieldset>
+   
+    <button (click)="edit()" type="submit"> Finish Editing</button>
+  </form>
+  

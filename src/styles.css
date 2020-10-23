@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body { 
+    position: relative;
+    overflow: hidden;
+    transition: left 0.5s ease; /* Animation styles are just for demo */
+    left:0;
+  }
+  
+  body.push {
+    left:250px;
+  }

@@ -1,0 +1,54 @@
+%card-stats{
+  hr{
+    margin: 5px 15px;
+  }
+}
+
+
+.card-stats{
+  margin-bottom: 50px;
+  box-shadow: 2px 4px #bdbbbb;
+
+    .card-body{
+        padding: 15px 15px 50px;
+        height: 135px;
+
+        .numbers{
+          color: #ffffff;
+         
+          font-size: 2em;
+
+            p{
+                margin-bottom: 0;
+            }
+            .card-category {
+              color: #ffffff;
+              font-size: 16px;
+              line-height: 1.4em;
+              
+            }
+        }
+    }
+    .card-footer{
+        padding: 0px 15px 15px;
+
+        .stats{
+          color: $dark-gray;
+        }
+
+        hr{
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+    }
+    .icon-big {
+        min-height: 64px;
+        color: #ffffff;
+
+        i{
+            line-height: 59px;
+        }
+    }
+
+
+}
